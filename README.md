@@ -36,4 +36,4 @@ As seguintes ferramentas estão atualmente sendo utilizadas na construção dess
 - [IntelliJ IDEA Ultimate JETBRAIN IDE](https://www.jetbrains.com/help/idea/installation-guide.html)
 
 ### LICENÇA
-[Licença do MIT](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
