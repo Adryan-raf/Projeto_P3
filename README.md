@@ -34,3 +34,6 @@ As seguintes ferramentas estão atualmente sendo utilizadas na construção dess
 
 - [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - [IntelliJ IDEA Ultimate JETBRAIN IDE](https://www.jetbrains.com/help/idea/installation-guide.html)
+
+### LICENÇA
+[Licença do MIT](LICENSE)
