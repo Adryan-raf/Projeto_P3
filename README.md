@@ -26,7 +26,7 @@ O objetivo deste projeto é desenvolver uma aplicação em Java que simule siste
   * [Adryan Rafael](https://github.com/Adryan-raf)
   * [Gabriel Araújo](https://github.com/Masterofdarkdarkness)
   * [Jonas Mendes](https://github.com/jonas-jhz)
-  * [José Roberval]()
+  * [José Roberval](https://github.com/robervalgneto)
   * [Lucas Vinicius]()
 
 ### TECNOLOGIAS UTILIZADAS
