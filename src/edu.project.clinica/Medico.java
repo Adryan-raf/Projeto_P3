@@ -11,7 +11,7 @@ public class Medico{
         this.telefone = telefone;
         this.email = email;
         this.ID = ID;
-        this CPF = CPF;
+        this.CPF = CPF;
         this.especialidade = especialidade;
     }
     
@@ -39,7 +39,7 @@ public class Medico{
         return email;
     }
 
-    ID getID(){
+    int getID(){
         this.ID = ID;
     }
     
@@ -56,7 +56,7 @@ public class Medico{
     }
 
     String getNome(){
-        this.nome = nome;
+        this.especialidade = especialidade;
     }
     
     void setEspecialidade(String especialidade){
