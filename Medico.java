@@ -1,14 +1,13 @@
-public class Paciente{
+public class Medico{
     private String nome;
     private String telefone;
     private String email;
     private int ID;
     private String CPF;
-    private String endereco;
+    private String especialidade;
     
-    Paciente(String nome, int codigo){
+    Medico(String nome){
         this.nome = nome;
-        this.codigo = codigo;
     }
     
     String getNome(){
