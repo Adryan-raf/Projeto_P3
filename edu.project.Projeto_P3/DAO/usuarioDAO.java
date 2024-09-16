@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class usuarioDAO {
     public void cadastraUsuario(Usuario usuario){
 
-        String sql= "INSERT INTO USUARIO (NOME, LOGIN, SENHA, EMAIL, CPF) VALUES (?,?,?,?,?)";
+        String sql= "INSERT INTO USUARIO (NOME, LOGIN, SENHA, EMAIL, CPF, telefone) VALUES (?,?,?,?,?, ?)";
         PreparedStatement ps = null;
 
         try {
@@ -18,6 +18,7 @@ public class usuarioDAO {
             ps.setString(3, usuario.getSenha());
             ps.setString(4, usuario.getEmail());
             ps.setString(5, usuario.getCPF());
+            ps.setString(6, usuario.getTelefone());
 
             ps.execute();
             ps.close();

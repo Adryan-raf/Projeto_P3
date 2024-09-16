@@ -1,19 +1,20 @@
 package entidades;
 
-public class usuario {
-    int ID;
-    String nome;
-    String login;
-    String senha;
-    String email;
-    String CPF;
+public abstract class Usuario {
+    protected String nome;
+    protected String login;
+    protected String senha;
+    protected String email;
+    protected String CPF;
+    protected String telefone;
 
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
+    public Usuario(String nome, String login, String senha, String email, String CPF, String telefone){
+        this.nome=nome;
+        this.login=login;
+        this.senha=senha;
+        this.email=email;
+        this.CPF=CPF;
+        this.telefone=telefone;
     }
 
     public String getNome() {
@@ -54,5 +55,13 @@ public class usuario {
 
     public void setCPF(String CPF) {
         this.CPF = CPF;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
 }

@@ -1,66 +1,21 @@
 package entidades;
 
-public class Paciente{
-    private String nome;
-    private String telefone;
-    private String email;
-    private int ID;
-    private String CPF;
-    private String endereco;
-    
-    Paciente(String nome, Strig, ID, CPF, endereco){
-        this.nome = nome;
-        this.email = email;
-        this.ID = ID;
-        this.CPF = CPF;
-        this.endereco = endereco;
-    }
-    
-    String getNome(){
-        this.nome = nome;
-    }
-    
-    void setNome(String nome){
-        return nome;
+public class Paciente extends Usuario{
+
+    private String condicao;
+
+    public Paciente(String nome, String login, String senha, String email, String CPF, String telefone, String condicao){
+
+        super(nome, login, senha, email, CPF, telefone);
+
+        this.condicao = condicao;
     }
 
-    String getTelefone(){
-        this.telefone = telefone;
-    }
-    
-    void setTelefone(String telefone){
-        return telefone;
+    public String getCondicao() {
+        return condicao;
     }
 
-    String getEmail(){
-        this.email = email;
-    }
-    
-    void setEmail(String email){
-        return email;
-    }
-
-    int getID(){
-        this.ID = ID;
-    }
-    
-    void setID(int ID){
-        return ID;
-    }
-
-    String getCPF(){
-        this.CPF = CPF;
-    }
-    
-    void setCPF(String CPF){
-        return CPF;
-    }
-
-    String getEndereco(){
-        this.endereco = endereco;
-    }
-
-    void setEndereco(String endereco){
-        return endereco;
+    public void setCondicao(String condicao) {
+        this.condicao = condicao;
     }
 }
