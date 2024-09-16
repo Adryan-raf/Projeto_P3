@@ -8,9 +8,8 @@ public class Paciente{
     private String CPF;
     private String endereco;
     
-    Paciente(String nome, int codigo){
+    Paciente(String nome, Strig, ID, CPF, endereco){
         this.nome = nome;
-        this.codigo = codigo;
         this.email = email;
         this.ID = ID;
         this.CPF = CPF;
