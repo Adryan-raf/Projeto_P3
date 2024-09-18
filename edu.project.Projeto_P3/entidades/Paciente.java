@@ -4,12 +4,14 @@ public class Paciente extends Usuario{
 
     private String condicao;
 
-    public Paciente(String nome, String login, String senha, String email, String CPF, String telefone, String condicao){
+    public Paciente(String nome, String token){
 
-        super(nome, login, senha, email, CPF, telefone);
+        super(nome, token);
 
         this.condicao = condicao;
     }
+
+    public Paciente(){}
 
     public String getCondicao() {
         return condicao;

@@ -1,13 +1,12 @@
 package DAO;
 
-import entidades.*;
 import conexao.Conex;
+import entidades.Paciente;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class usuarioDAO {
-    public void cadastraUsuario(Usuario usuario){
-
+public class pacienteDAO {
+    public void cadastraUsuario(Paciente usuario){
         String sql= "INSERT INTO USUARIO (NOME, TOKEN) VALUES (?,?)";
         PreparedStatement ps = null;
 
@@ -23,4 +22,3 @@ public class usuarioDAO {
         }
     }
 }
-
