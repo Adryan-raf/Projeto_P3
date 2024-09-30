@@ -27,7 +27,7 @@ O objetivo deste projeto é desenvolver uma aplicação em Java que simule siste
   * [Gabriel Araújo](https://github.com/Gabriel-SL-Araujo)
   * [Jonas Mendes](https://github.com/jonas-jhz)
   * [José Roberval](https://github.com/robervalgneto)
-  * [Lucas Vinicius]()
+  * [Lucas Vinicius](https://github.com/lucavinini/)
 
 ### TECNOLOGIAS UTILIZADAS
 As seguintes ferramentas estão atualmente sendo utilizadas na construção desse projeto:
