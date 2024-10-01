@@ -6,7 +6,7 @@ public abstract class Usuario {
     protected String CPF;
     protected String telefone;
     protected String senha;
-    public Consulta consulta;
+    protected String endereco;
 
 
     public Usuario() {
@@ -59,4 +59,5 @@ public abstract class Usuario {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+    public abstract void status();
 }
