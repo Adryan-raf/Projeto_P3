@@ -1,3 +1,5 @@
+package entidades.entidades_restaurante;
+
 public class itensDoPedido{
         private String nomeDoPrato;
         private double precoDoPrato;

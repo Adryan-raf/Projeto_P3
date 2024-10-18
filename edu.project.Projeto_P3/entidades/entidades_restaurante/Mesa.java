@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+package entidades.entidades_restaurante;
 
 public class Mesa{
     private int numero;

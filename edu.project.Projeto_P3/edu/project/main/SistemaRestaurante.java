@@ -1,5 +1,8 @@
+package edu.project.main;
+
 import java.util.Scanner;
 import java.util.ArrayList;
+import entidades.entidades_restaurante.*;
 
 public class SistemaRestaurante{
     
