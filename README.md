@@ -29,7 +29,6 @@ O objetivo deste projeto é desenvolver uma aplicação em Java que simule siste
 ### Feito por:
  - Adryan Rafael
 
-\* _Este sistema é uma implementação individual feita por Adryan Rafael, como parte de um projeto de gerenciamento de clínicas médicas._
 
 ## Como este sistema funciona?
 
@@ -47,7 +46,6 @@ As classes seguem o paradigma de orientação a objetos e são projetadas para f
 
 ### -> Consulta
   
-\* _Classe e métodos definidos por Adryan Rafael_
 
 Esta classe tem como objetivo definir uma consulta. A consulta possui: Paciente, Médico, Data da Consulta, e Status da Consulta (Agendada, Cancelada ou Concluída). Seus atributos são protegidos por encapsulamento, com um construtor definido, bem como os métodos _getters_ e _setters_.
 
@@ -59,7 +57,6 @@ A classe Consulta pode:
 
 ### -> Medico
 
-\* _Classe e métodos definidos por Adryan Rafael_
 
 Esta classe tem como finalidade definir um médico. Um médico possui: Nome, CRM, Especialidade, Horário de Atendimento, e uma lista de consultas atribuídas a ele. Seus atributos estão encapsulados, e os métodos _getters_ e _setters_ estão definidos.
 
@@ -70,7 +67,6 @@ A classe Medico pode:
 
 ### -> Paciente
 
-\* _Classe e métodos definidos por Adryan Rafael_
 
 Esta classe define um paciente. Um paciente possui: Nome, CPF, Email, Senha, Telefone, Histórico Médico e Convênio. Seus atributos estão protegidos, e os métodos _getters_ e _setters_ estão definidos.
 
@@ -80,7 +76,6 @@ A classe Paciente pode:
 
 ### -> ClinicaMedica
 
-\* _Classe e métodos definidos por Adryan Rafael_
 
 Esta classe reúne todas as outras classes e métodos mencionados, permitindo que o sistema funcione de forma integrada para o usuário final. Ela contém um método `main(String[] args)` que inicializa o sistema e oferece uma interface interativa com opções numéricas para uso.
 
