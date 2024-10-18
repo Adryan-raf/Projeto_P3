@@ -1,7 +1,6 @@
-package entidades;
+package entidades.entidades_clinica;
 
 import java.util.ArrayList;
-import java.util.Map;
 
 public class Paciente extends Usuario {
 

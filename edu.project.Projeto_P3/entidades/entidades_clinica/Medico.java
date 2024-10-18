@@ -1,4 +1,4 @@
-package entidades;
+package entidades.entidades_clinica;
 
 import java.util.ArrayList;
 

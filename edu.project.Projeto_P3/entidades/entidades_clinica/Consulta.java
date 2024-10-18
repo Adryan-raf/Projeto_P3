@@ -1,4 +1,4 @@
-package entidades;
+package entidades.entidades_clinica;
 
 public class Consulta {
     private Paciente paciente;

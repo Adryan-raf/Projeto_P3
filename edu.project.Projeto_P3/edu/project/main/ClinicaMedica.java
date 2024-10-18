@@ -1,6 +1,8 @@
-package edu.project.clinica;
+package edu.project.main;
 
-import entidades.*;
+import entidades.entidades_clinica.Consulta;
+import entidades.entidades_clinica.Medico;
+import entidades.entidades_clinica.Paciente;
 
 
 import java.util.Scanner;
