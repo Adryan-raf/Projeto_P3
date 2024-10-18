@@ -14,7 +14,6 @@
 * [Desenvolvedores do Projeto](#desenvolvedores-do-projeto)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Licença](#licença)
-* [Conclusão](#conclusão)
 
 
   # DESCRIÇÃO DO PROJETO
