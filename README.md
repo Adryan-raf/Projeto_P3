@@ -7,11 +7,12 @@
   # ÍNDICE
 * [Índice](#índice)
 * [Descrição do Projeto](#descrição-do-projeto)
-* [Desenvolvimento do Projeto](#desenvolvimento-do-projeto)
-* [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
-* [Acesso ao Projeto](#acesso-ao-projeto)
-* [Tecnologias utilizadas](#tecnologias-utilizadas)
+* [Case 1](#Case-1)
+* [Case 2](#Case-2)
+* [Case 3](#Case-3)
+* [Perguntas para facilitar a tomada de decisão](#Perguntas-para-facilitar-a-tomada-de-decisão)
 * [Desenvolvedores do Projeto](#desenvolvedores-do-projeto)
+* [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Licença](#licença)
 * [Conclusão](#conclusão)
 
@@ -22,24 +23,85 @@
 O objetivo deste projeto é desenvolver uma aplicação em Java que simule sistemas de gerenciamento para três cenários distintos: uma clínica médica, um sistema de eventos e um restaurante. A aplicação será capaz de modelar e manipular objetos que representem os elementos principais desses sistemas, utilizando noções de manipulação de classes, atributos, métodos, conceitos de decisão e repetição, modularização e encapsulamento.
   </p>
 
-  # DESENVOLVEDORES DO PROJETO
-  * [Adryan Rafael](https://github.com/Adryan-raf)
-  * [Gabriel Araújo](https://github.com/Gabriel-SL-Araujo)
-  * [Jonas Mendes](https://github.com/jonas-jhz)
-  * [José Roberval](https://github.com/robervalgneto)
-  * [Lucas Vinicius](https://github.com/lucavinini/)
-
-### TECNOLOGIAS UTILIZADAS
-As seguintes ferramentas estão atualmente sendo utilizadas na construção desse projeto:
-
-- [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
-- [IntelliJ IDEA Ultimate JETBRAIN IDE](https://www.jetbrains.com/help/idea/installation-guide.html)
-
-
-
-
-
 # CASE 1
+
+## SISTEMA DE GERENCIAMENTO DE CLÍNICA MÉDICA
+
+### Feito por:
+ - Adryan Rafael
+
+\* _Este sistema é uma implementação individual feita por Adryan Rafael, como parte de um projeto de gerenciamento de clínicas médicas._
+
+## Como este sistema funciona?
+
+O sistema de gerenciamento de clínica médica possui uma interface simples para o usuário, permitindo o controle eficiente dos atendimentos médicos com as seguintes funções:
+
+- Marcar consultas
+- Cancelar consultas
+- Concluir consultas
+- Exibir prontuário de pacientes
+- Análise de consultas e gestão de agenda médica
+
+## Classes
+
+As classes seguem o paradigma de orientação a objetos e são projetadas para facilitar o gerenciamento de médicos, pacientes e consultas dentro da clínica. O sistema inclui classes para "Paciente", "Medico" e "Consulta", além da classe "ClinicaMedica" que integra essas funcionalidades para uso prático.
+
+### -> Consulta
+  
+\* _Classe e métodos definidos por Adryan Rafael_
+
+Esta classe tem como objetivo definir uma consulta. A consulta possui: Paciente, Médico, Data da Consulta, e Status da Consulta (Agendada, Cancelada ou Concluída). Seus atributos são protegidos por encapsulamento, com um construtor definido, bem como os métodos _getters_ e _setters_.
+
+A classe Consulta pode:
+- Exibir detalhes da consulta
+- Concluir a consulta com um resultado médico
+- Cancelar uma consulta
+- Atualizar o status da consulta
+
+### -> Medico
+
+\* _Classe e métodos definidos por Adryan Rafael_
+
+Esta classe tem como finalidade definir um médico. Um médico possui: Nome, CRM, Especialidade, Horário de Atendimento, e uma lista de consultas atribuídas a ele. Seus atributos estão encapsulados, e os métodos _getters_ e _setters_ estão definidos.
+
+A classe Medico pode:
+- Verificar a disponibilidade para uma data específica
+- Adicionar uma consulta à sua agenda
+- Exibir todas as consultas agendadas
+
+### -> Paciente
+
+\* _Classe e métodos definidos por Adryan Rafael_
+
+Esta classe define um paciente. Um paciente possui: Nome, CPF, Email, Senha, Telefone, Histórico Médico e Convênio. Seus atributos estão protegidos, e os métodos _getters_ e _setters_ estão definidos.
+
+A classe Paciente pode:
+- Adicionar uma consulta ao seu prontuário
+- Exibir o prontuário completo com todas as consultas realizadas
+
+### -> ClinicaMedica
+
+\* _Classe e métodos definidos por Adryan Rafael_
+
+Esta classe reúne todas as outras classes e métodos mencionados, permitindo que o sistema funcione de forma integrada para o usuário final. Ela contém um método `main(String[] args)` que inicializa o sistema e oferece uma interface interativa com opções numéricas para uso.
+
+O usuário pode:
+- Marcar consultas
+- Cancelar consultas
+- Concluir consultas
+- Exibir prontuário de pacientes
+- Exibir informações gerais e específicas de consultas
+
+Dentro das opções de análise, há 5 funcionalidades que respondem a perguntas e facilitam a tomada de decisão no gerenciamento da clínica médica. São elas:
+
+- Quantas consultas estão agendadas para um médico específico?
+- Quantas consultas foram canceladas?
+- Qual foi o resultado da última consulta realizada?
+- Qual é a próxima consulta do paciente?
+- Há algum horário disponível para uma nova consulta no dia X?
+
+
+
 # CASE 2
 
 ## SISTEMA DE GERENCIAMENTO DE EVENTOS
@@ -121,7 +183,7 @@ Dentro das opções de análise, temos 5 opções que respondem e facilitam uma 
 
 # CASE 3
 
-# SISTEMA DE GERENCIAMENTO DE EVENTOS
+# SISTEMA DE GERENCIAMENTO DE RESTAURANTE
 
 ### Feito em conjunto por:
 - Gabriel Araújo;
@@ -174,6 +236,12 @@ Para cada case, algumas perguntas que facilitam a tomada de decisão foram imple
 
 ### Case 1
 
+- Quantas consultas estão agendadas para o médico?
+- Qual é a próxima consulta do paciente?
+- Quantas consultas foram canceladas pelo médico ou pelo paciente?
+- Qual foi o resultado da última consulta realizada?
+- Há algum horário disponível para uma nova consulta no dia X?
+
 ### Case 2 -Gerenciamento de eventos
 
 - Qual o evento registrado com maior taxa de adesão?
@@ -182,7 +250,7 @@ Para cada case, algumas perguntas que facilitam a tomada de decisão foram imple
 - Qual o total de participantes em todos os eventos?
 - Qual o local mais popular para fazer eventos?
 
-### Case 3
+### Case 3 - Gerenciamento do Restaurante
 
 - Quais são os pedidos que cada mesa possui?
 - Qual o custo total levando em consideração a quantidade solicitada de um pedido?
@@ -190,6 +258,21 @@ Para cada case, algumas perguntas que facilitam a tomada de decisão foram imple
 - O sistema lida com a remoção e a inserção de pedidos na conta de uma mesa?
 - Em casos de comandos inválidos, o sistema notifica o erro ocorrido para o funcionário que desconhece a causa do mesmo?
 
+# DESENVOLVEDORES DO PROJETO
+* [Adryan Rafael](https://github.com/Adryan-raf)
+* [Gabriel Araújo](https://github.com/Gabriel-SL-Araujo)
+* [Jonas Mendes](https://github.com/jonas-jhz)
+* [José Roberval](https://github.com/robervalgneto)
+* [Lucas Vinicius](https://github.com/lucavinini/)
+
+
+
+
+### TECNOLOGIAS UTILIZADAS
+As seguintes ferramentas estão atualmente sendo utilizadas na construção desse projeto:
+
+- [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+- [IntelliJ IDEA Ultimate JETBRAIN IDE](https://www.jetbrains.com/help/idea/installation-guide.html)
 
 
 ### LICENÇA
