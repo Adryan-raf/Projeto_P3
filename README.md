@@ -207,19 +207,19 @@ Ela carrega consigo algumas funções que realizam as operações supracitadas e
 
 ### -> Mesa 
 
-\* _Classe e métodos definidos por Gabriel_
+\* _Classe e métodos definidos por Gabriel_ e Lucas_
 
 O intuito da criação dessa classe está na capacidade de verificação da disponibilidade de uma mesa e na inserção do cliente a mesa escolhida por ele. Dessarte, ela conta com métodos para adicionar itens à mesa selecionada previamente, assim como remover e vizualizar os pedidos.
 
 ### -> Pedido
 
-\* _Classe e métodos definidos por Gabriel_
+\* _Classe e métodos definidos por Gabriel_ e Lucas_
 
 A classe Pedido representa o conjunto de itens consumidos em uma única mesa no restaurante.
 
 ### -> itensDoPedido
 
-\* _Classe e métodos definidos por Gabriel_
+\* _Classe e métodos definidos por Gabriel_ e Lucas_
 
 O objetivo dessa classe se limita a impressão e a construção das informações que cincundeiam um pedido, armazenando informações sobre ele tais como o nome do produto e preço.
 
@@ -238,6 +238,18 @@ A classe a seguir tem como objetivo organizar os gastos totalizados do consumo d
 \* _Classe e métodos definidos por Gabriel_ e Lucas_
 
 Esta classe visa trazer a temática do código abordado ao expor um cardápio criado pela equipe para simbolizar as opções de ofertas que o restaurante trás.
+
+### IMPLEMENTAÇÃO DO MÉTODO SOLID
+
+S - Single Resposibility Principle: A classe Pedido tem a responsabilidade exclusiva de gerenciar os itens consumidos em um pedido. Ela é responsável apenas por armazenar os itens do itensDoPedido, calcular o total do pedido e exibir o pedido. Não há outras responsabilidades dentro desta classe, como, por exemplo, manipular a ocupação das mesas, que é tratada pela classe Mesa.
+
+O - Open/Closed Principle: A classe de Gerenciador De Mesas pode ser estendida para adicionar novos métodos ou comportamentos sem modificar o código existente.
+
+L - Liskov Substitution Principle: Se em algum momento for necessário criar subclasses de Mesa ou Pedido, essas devem funcionar corretamente em qualquer parte do código que esperar um objeto da classe Mesa ou Pedido.
+
+I - Interface Segregation Principle: Em vez de criar uma interface única e complexa para todas as operações do sistema, o código se divide em classes específicas como Pedido, Mesa e GerenciadorDeMesas, cada uma com responsabilidades bem definidas. Desse modo, percebe-se que cada classe oferece métodos específicos e relacionados ao seu contexto.
+
+D - Dependency Inversion Principle: A classe GerenciadorDeMesas depende de interfaces ou classes abstratas como o GerenciadorDeVendas para processar o total das vendas. Isso permite que a implementação do GerenciadorDeVendas seja alterada sem afetar a GerenciadorDeMesas, já que ambas as classes não dependem diretamente de uma implementação concreta, mas de abstrações.
 
 
 # Perguntas para facilitar a tomada de decisão
