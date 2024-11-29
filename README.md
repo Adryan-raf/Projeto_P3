@@ -203,26 +203,42 @@ As classes do códigos realizam as funções que foram requisitadas pelo profess
 
 Esta classe é a estrutura mais importante do código, uma vez que ele carrega a main dele e conecta as demais classes afim de permitir que o codigo seja efetuado com sucesso. 
 
-Ela carrega consigo algumas funções que realizam as operações supracitadas e faz a chamada das outras classes, além de criar uma interface que permite que o usuário interaja com o sistema, realize as operações requeridas por ele e veja as informações adicionais do restaurante, como o cardápio e a a relação atual mesa-pedido;
+Ela carrega consigo algumas funções que realizam as operações supracitadas e faz a chamada das outras classes.
 
 ### -> Mesa 
 
 \* _Classe e métodos definidos por Gabriel_
 
-O intuito da criação dessa classe está na capacidade de verificação da disponibilidade de uma mesa e na inserção do cliente a mesa escolhida por ele. Dessarte, Ela conta com métodos para adicionar itens à mesa selecionada previamente, assim como remover e vizualizar os pedidos.
+O intuito da criação dessa classe está na capacidade de verificação da disponibilidade de uma mesa e na inserção do cliente a mesa escolhida por ele. Dessarte, ela conta com métodos para adicionar itens à mesa selecionada previamente, assim como remover e vizualizar os pedidos.
 
 ### -> Pedido
 
 \* _Classe e métodos definidos por Gabriel_
 
-As funcionalidades dessa função inclue: uma adição (por trás das cenas) dos pedidos feitos e os inserem dentro de um array, o cálculo de soma total dos custos de uma mesa, adiciona os pedidos ao array específico, bem como a remoção deles e imprime o pedido feito quando solicitado.
-
+A classe Pedido representa o conjunto de itens consumidos em uma única mesa no restaurante.
 
 ### -> itensDoPedido
 
 \* _Classe e métodos definidos por Gabriel_
 
-O objetivo dessa classe se limita a impressão e a construção de métodos para expor os pedidos da mesa e calcular o total dos custos totais.
+O objetivo dessa classe se limita a impressão e a construção das informações que cincundeiam um pedido, armazenando informações sobre ele tais como o nome do produto e preço.
+
+### -> Gerenciador de Mesas
+\* _Classe e métodos definidos por Gabriel_
+
+A classe GerenciadorDeMesas é responsável por controlar e organizar as mesas disponíveis no restaurante. Ela gerencia o estado de ocupação das mesas e interage com outras classes para realizar operações relacionadas ao fluxo de atendimento.
+
+### -> Gerenciador de Vendas
+\* _Classe e métodos definidos por Gabriel_
+
+A classe a seguir tem como objetivo organizar os gastos totalizados do consumo de um cliente numa mesa e somá-los conforme estabelecido na classe Cardápio para sinalizar ao consumidor o quanto ele deve pagar. 
+
+### -> Cardápio
+
+\* _Classe e métodos definidos por Gabriel_ e Lucas_
+
+Esta classe visa trazer a temática do código abordado ao expor um cardápio criado pela equipe para simbolizar as opções de ofertas que o restaurante trás.
+
 
 # Perguntas para facilitar a tomada de decisão
 
