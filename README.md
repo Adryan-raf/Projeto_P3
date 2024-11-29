@@ -302,7 +302,7 @@ Os módulos dependem de abstrações, como uma interface Reservavel, usada para 
 
 # Beneficios da integração com os principios SOLID
 
-###M odularidade: 
+### Modularidade: 
 Cada sistema pode ser tratado como um módulo independente (Clinica, Eventos, Restaurante), compartilhando classes base comuns, como Usuario e Reserva.
 
 ### Extensibilidade:
