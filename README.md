@@ -11,6 +11,9 @@
 * [Case 2](#Case-2)
 * [Case 3](#Case-3)
 * [Perguntas para facilitar a tomada de decisão](#Perguntas-para-facilitar-a-tomada-de-decisão)
+* [Conceitos SOLID utilizados](#Conceitos-SOLID-utilizados)
+* [Beneficios da integração com os principios SOLID](#Beneficios-da-integração-com-os-principios-SOLID)
+* [Diagrama de classes UML](#Diagrama-de-classes-UML)
 * [Desenvolvedores do Projeto](#desenvolvedores-do-projeto)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Licença](#licença)
@@ -279,6 +282,41 @@ Para cada case, algumas perguntas que facilitam a tomada de decisão foram imple
 - O sistema consegue expor todos os pedidos da mesa que fechará a conta e o custo total?
 - O sistema lida com a remoção e a inserção de pedidos na conta de uma mesa?
 - Em casos de comandos inválidos, o sistema notifica o erro ocorrido para o funcionário que desconhece a causa do mesmo?
+
+# Conceitos SOLID utilizados
+
+### Responsabilidade Única (SRP):
+Cada módulo (Clinica, Eventos, Restaurante) possui classes específicas para suas funções principais, como Consulta, Evento e Pedido. Isso garante organização e facilita manutenção.
+
+### Aberto/Fechado (OCP):
+É possível adicionar novas funcionalidades (ex.: novos tipos de eventos ou menus sazonais no restaurante) sem alterar o núcleo dos sistemas.
+
+### Substituição de Liskov (LSP):
+Classes como Usuario (base) podem ser substituídas por suas subclasses (Paciente, Organizador, Cliente) em qualquer parte do sistema, mantendo a coerência.
+
+### Segregação de Interface (ISP):
+Cada módulo implementa apenas os métodos relevantes ao seu escopo, evitando sobrecarga desnecessária. Exemplo: métodos de agendamento são usados apenas onde necessário.
+
+### Inversão de Dependência (DIP): 
+Os módulos dependem de abstrações, como uma interface Reservavel, usada para Consulta, Reserva de Evento e Mesa, permitindo integração sem acoplamento rígido.
+
+# Beneficios da integração com os principios SOLID
+
+###M odularidade: 
+Cada sistema pode ser tratado como um módulo independente (Clinica, Eventos, Restaurante), compartilhando classes base comuns, como Usuario e Reserva.
+
+### Extensibilidade:
+Facilita a adição de funcionalidades específicas para cada módulo (ex.: Consulta para a clínica, Cardápio para o restaurante, e Agenda para eventos), sem afetar os demais.
+
+### Reutilização de Código: 
+Classes e métodos comuns, como autenticação ou gerenciamento de usuários, podem ser reutilizados em todos os sistemas.
+
+### Escalabilidade: 
+O uso de abstrações permite expandir o sistema integrado com novas funcionalidades sem reescrever o código existente.
+
+# Diagrama de classes UML
+
+
 
 # DESENVOLVEDORES DO PROJETO
 * [Adryan Rafael](https://github.com/Adryan-raf)
