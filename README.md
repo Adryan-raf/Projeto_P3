@@ -319,7 +319,7 @@ O uso de abstrações permite expandir o sistema integrado com novas funcionalid
  <img src="uml.png" alt="Diagrama UML" width="1000">
 
 # Fluxo de Diagrama de classes UML
-<img src="fluxoUML.png" alt="Fluxo de Diagrama UML" width="1000">
+<img src="fluxoUML.png" alt="Fluxo de Diagrama UML" width="500">
 
 # DESENVOLVEDORES DO PROJETO
 * [Adryan Rafael](https://github.com/Adryan-raf)
