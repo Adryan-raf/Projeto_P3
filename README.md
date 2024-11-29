@@ -14,6 +14,7 @@
 * [Conceitos SOLID utilizados](#Conceitos-SOLID-utilizados)
 * [Beneficios da integração com os principios SOLID](#Beneficios-da-integração-com-os-principios-SOLID)
 * [Diagrama de classes UML](#Diagrama-de-classes-UML)
+* [Fluxo de diagrama UML](#Fluxo-de-diagrama-UML)
 * [Desenvolvedores do Projeto](#desenvolvedores-do-projeto)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Licença](#licença)
@@ -315,8 +316,10 @@ Classes e métodos comuns, como autenticação ou gerenciamento de usuários, po
 O uso de abstrações permite expandir o sistema integrado com novas funcionalidades sem reescrever o código existente.
 
 # Diagrama de classes UML
+ <img src="uml.png" alt="Diagrama UML" width="1000">
 
-
+# Fluxo de Diagrama de classes UML
+<img src="fluxouml.png" alt="Fluxo de Diagrama UML" width="1000">
 
 # DESENVOLVEDORES DO PROJETO
 * [Adryan Rafael](https://github.com/Adryan-raf)
