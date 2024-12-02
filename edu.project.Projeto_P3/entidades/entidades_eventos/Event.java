@@ -16,7 +16,6 @@ public class Event implements Buscavel<Event> {
         this.local = local;
     }
 
-    // Getters
     public String getNomeEvento() {
         return nomeEvento;
     }
@@ -33,7 +32,6 @@ public class Event implements Buscavel<Event> {
         return local;
     }
 
-    // Métodos para gerenciar participantes
     public boolean adicionarParticipante(Participante participante) {
         if (participantes.size() < capacidade) {
             participantes.add(participante);
@@ -50,13 +48,11 @@ public class Event implements Buscavel<Event> {
         return new ArrayList<>(participantes);
     }
 
-    // Implementação da interface Buscavel
     @Override
     public Event buscar(String nome) {
         return this.nomeEvento.equalsIgnoreCase(nome) ? this : null;
     }
 
-    // Sobrecarga para busca de participantes
     public Participante buscarParticipante(String nome) {
         for (Participante p : participantes) {
             if (p.getNome().equalsIgnoreCase(nome)) {
@@ -76,7 +72,6 @@ public class Event implements Buscavel<Event> {
         return resultados;
     }
 
-    // Exibir estatísticas do evento
     public String mostrarEstatisticas() {
         StringBuilder estatisticas = new StringBuilder();
         estatisticas.append(nomeEvento)

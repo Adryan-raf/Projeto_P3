@@ -16,7 +16,6 @@ public class Local implements Buscavel<Local> {
         this.eventos = new ArrayList<>();
     }
 
-    // Getters e Setters
     public String getNome() {
         return nome;
     }
@@ -37,7 +36,6 @@ public class Local implements Buscavel<Local> {
         return new ArrayList<>(eventos);
     }
 
-    // Método para adicionar evento
     public boolean adicionarEvento(Event evento) {
         if (disponivel && evento.getCapacidade() <= capacidade) {
             eventos.add(evento);
@@ -46,28 +44,23 @@ public class Local implements Buscavel<Local> {
         return false;
     }
 
-    // Método para verificar ocupação
     public boolean verificarOcupacao() {
         return !eventos.isEmpty();
     }
 
-    // Implementação da interface Buscavel
     @Override
     public Local buscar(String nome) {
         return this.nome.equalsIgnoreCase(nome) ? this : null;
     }
 
-    // Sobrecarga para busca por capacidade
     public boolean capacidadeSuficiente(int capacidadeRequerida) {
         return capacidade >= capacidadeRequerida;
     }
 
-    // Método para remover evento
     public boolean removerEvento(String nomeEvento) {
         return eventos.removeIf(e -> e.getNomeEvento().equalsIgnoreCase(nomeEvento));
     }
-
-    // Método para exibir informações do local
+    
     @Override
     public String toString() {
         return nome + " (Capacidade: " + capacidade + ", Disponível: " + (disponivel ? "Sim" : "Não") + ")";
